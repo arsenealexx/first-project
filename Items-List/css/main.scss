@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import 'header';
+@import 'colors';
+@import 'base';
+
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// JGHJKHDJFKHFJKHDJKFHDJKHFD
+.collapsible {
+  // border-top: 1px solid #9fd0ff;
+  // background-color: #777;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $black;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: white;
+}
+.pagination a {
+  // margin: 10px 0 10px 0 ;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination, .footer-pagination  {
+  margin: 10px;
+  padding: 10px;
+}
+.pagination a.active {
+  background-color: $blue;
+  color: white;
+}
+.right-pull{
+  margin: 5px;
+  padding: 5px;
+
+} 
+.right-pull-bottom select{
+  margin: 5px;
+  padding: 5px;
+  height: 32px;
+  width: 55px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.15);
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+
+}
+.footer-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  // border-top: 1px solid #9fd0ff;
+ 
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+// sdlasjkdasljkdasjkhdakjshdas
+
+.prod-1{
+    height: 330px; 
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.12);
+    box-shadow: 5px 10px 18px #888888;
+   
+   img {  
+       height: 220px;
+       width: 220px;
+       margin-top: 10px;    
+   }
+}
+
+.left-part {
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 5px 10px 18px #888887;
+  width: 300px;
+  height: 750px;
+  margin-left: 10px;
+  padding: 10px;
+}
+.left-collapsible {
+  // border: 1px solid #9fd0ff;
+  margin: 5px 0 5px 0;
+  padding: 5px 0 5px 0;
+  margin-top: 75px;
+}
+.sort-part {
+  border: 1px solid rgba(0,0,0,.12);
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  select{
+        height: 28px;
+        border-radius: 3px;
+        border: 1px solid #888888;
+      }
+  span {
+    font-size: 14px;
+  }
+     
+  .Sort {
+    margin-right: 10px;
+  }
+}
+.right-part {
+  border: 1px solid rgba(0,0,0,.12);
+  box-shadow: 5px 10px 18px #888887;
+  width: 900px;
+}
+
+.container {
+  // border: 1px solid blue;
+  display: flex;
+}
+.sort-prd {
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid blue;
+  padding: 10px;
+  margin: 5px;
+  width: 860px;
+}
+input[type="checkbox"] {
+  color: $blue;
+  background-color: #ef2809;
+}
+.search-container {
+  padding: 6px;
+  margin: 20px 0 30px 10px;
+  display: block;
+   
+  input[type=search] {
+    width: 700px;
+    height: 32px;
+    font-size: 17px;
+    padding: 0 50px 0 17px;
+    color: #b9b9b9;
+    
+  }
+  
+}
+.search-btn {
+  border-radius: 4px;
+  text-transform: uppercase;
+  font: 500 16px sans-serif; 
+  background: $blue;
+  color: $white;
+  width: 120px;
+  height: 32px;
+  border: none;
+  &:hover {
+    background-color: $bluedarker;
+    }
+} 
+.product-title {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin: 5px;
+}
+.product-price {
+  font-size: 16px;
+  margin: 0;
+  color: #ef2809; 
+  font-weight: 600;
+}
+.container-2 {
+  position: relative;
+  height: 228px;
+  width: 228px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-2:before {
+  /* empty pseudo */
+  content: '';
+  
+  /* start transparent, include a transition bcuz */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  
+  /* covers the whole div */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.container-2:hover:before {
+  opacity: 1;
+}
+.container-2 img {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.btn {
+  box-sizing: border-box;
+  display: block;
+  border-radius: 5px;
+  top: 60px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: relative;
+  padding: 0 30px;
+  height: 40px;
+  line-height: 40px;
+  max-width: 170px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: $blue;
+  color: $white;
+  z-index: 3;
+  border: none;
+  &:hover {
+    background-color: $bluedarker;
+    }
+}
+.btn-2 {
+  box-sizing: border-box;
+  display: block;
+  top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: relative;
+  padding: 0 40px;
+  height: 40px;
+  line-height: 40px;
+  max-width: 170px;
+  cursor: pointer;
+  border: 1px solid $bluedarker;
+  text-transform: uppercase;
+  background: transparent;
+  color: $white;
+  z-index: 3;
+
+}
+.container-2:hover .btn {
+  opacity: 1;
+}
+.container-2:hover .btn-2 {
+  opacity: 1;
+}
+// .sectio-2, .all-section{
+//   border: 1px solid $red;
+//   background-color: $whitedark;
+// }
+.all-section {
+  // border-top: 1px solid #4359c7;
+  // border: 1px solid rgba(0,0,0,.12);
+  background-color: $whitedark;
+}
+.sectio-2, .section-4, .section-5 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // margin: 25px;
+    
+}
+.footer-div {
+  margin-top: 20px;
+  margin-bottom: 0;
+  background-color: $yellowlight;
+  height: 110px;
+  width: 100%;
+  // border: 1px solid $red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    cursor: pointer;
+  }
+ 
+}
+.footer-cls {
+    display: flex;
+    justify-content: space-around;
+    // margin: 10px;
+    padding: 10px;
+
+    a {
+      text-decoration: none;
+      color: $black;
+      padding: 2px;
+    }
+
+    li {
+      list-style: none;
+
+    } .special-footer {
+      text-transform: uppercase;
+      color: $blue; 
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+     
+    }
+}
+
+

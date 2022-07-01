@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+  }
+body {
+    // background-color: #F2F2F2F2; 
+    background-color: $bluelight;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;  
+}

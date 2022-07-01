@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Items-List/css/main.css"
+    />
+    <!-- <link rel="stylesheet" href="/Proiect final Wansome/Cart/CSS/addtocart.css"> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/Proiect final Wansome/Items-List/css/style.css"> -->
+    <title>Propoduct page</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-navigation">
+        <div class="logo-nav">
+          <a href="/homepage/index.html" id="logo"
+            >NOTINGO <span>LOGO</span></a>
+        </div>
+        <div class="navbar-1">
+   
+            <div class="nav-bar-2">
+              <a href="/Sign-UP/signup.html">Register</a>
+              <a href="/Sign-IN/signin.html">Login</a>
+            </div>
+            <div class="shopping-bag">
+              <a href="/Cart/addtocart.html">
+                  <img src="./icons/bag-plus - Copy.png" alt="cart">
+                  Cos de cumparaturi
+                  <div class="total-items-in-cart">0</div></a>
+          </div>
+          <a>
+            <img src="/image/user-icon.png" class="user-icon" alt="">
+            <div class="user-icon-popup hide">
+              <p class="account-info">Login to your account</p>
+              <button class="bt" id="user-btn">Log out</button>
+            </div>
+            </a>
+         
+        </div>
+      </div>
+
+      <div class="nav-bar">
+        <div class="dropdown">
+         <button class="dropbtn">Parfumuri 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="/Items-List/index.html">Parfumuri pentru barbati</a>
+           <a href="/Items-List/index.html">Parfumuri pentru femei</a>
+           <a href="/Items-List/index.html">Parfumuri pentru casa</a>
+           <a href="/Items-List/index.html">Toate produsele</a>
+         </div>
+       </div> 
+       
+       <div class="dropdown">
+         <button class="dropbtn">Machiaj 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="/Items-List/index.html">Ten</a>
+           <a href="/Items-List/index.html">Ochi</a>
+           <a href="/Items-List/index.html">Sprancene</a>
+           <a href="/Items-List/index.html">Buze</a>
+         </div>
+       </div>
+    
+       <div class="dropdown">
+        <button class="dropbtn">Igiena dentara 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Items-List/index.html">Pasta de dinti</a>
+          <a href="/Items-List/index.html">Perii de dinti</a>
+          <a href="/Items-List/index.html">Apa de gura si spray</a>
+          <a href="/Items-List/index.html">Pentru copii</a>
+        </div>
+      </div>
+    
+         <a href="/Items-List/index.html">Altele</a>
+         <a href="/Items-List/index.html">Branduri</a>
+         <a href="/Items-List/index.html">Parfumuri pentru casa</a>
+       </div>
+    </header>
+    <section class="all-section">
+  
+
+      <section class="sectio-2">
+        <div class="container">
+          <div class="left-part">
+            
+            <aside>
+              <div class="left-collapsible">
+                <button class="collapsible">Parfumuri</button>
+                <div class="content"> 
+                  <div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="parfumuri"
+                        value="fem"
+                        id="fem" 
+                      /><label for="fem">Parfumuri pentru femei </label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="parfumuri"
+                        value="bar"
+                        id="bar"
+                      /><label for="bar">Parfumuri pentru bărbați </label>
+                    </div>
+                  </div>
+                </div>
+    
+                  <button class="collapsible">Brand</button>
+                  <div class="content">
+                    <div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="brand"
+                          value="armani"
+                          id="armani"
+                        /><label for="armani">Armani</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="brand"
+                          value="hugo"
+                          id="hugo"
+                        /><label for="hugo">Hugo Boss</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="brand"
+                          value="paco"
+                          id="paco"
+                        /><label for="paco">Paco Rabanne</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="brand"
+                          value="valentino"
+                          id="valentino"
+                        /><label for="valentino">Valentino</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="brand"
+                          value="versace"
+                          id="versace"
+                        /><label for="versace">Versace</label>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <button class="collapsible">Tip</button>
+                  <div class="content">
+                    <div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="tip"
+                          value="lux"
+                          id="lux"
+                        /><label for="lux">Luxury</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="tip"
+                          value="cla"
+                          id="cla"
+                        /><label for="cla">Clasic</label>
+                      </div>
+                    </div>
+                  </div>
+    
+     
+                
+                  <button class="collapsible">Grupe de parfumuri</button>
+                  <div class="content">
+                    <div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="grupuriparfum"
+                          value="acvatice"
+                          id="acvatice"
+                        /><label for="acvatice">Acvatice</label>
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="grupuriparfum"
+                          value="aromatice"
+                          id="aromatice"
+                        /><label for="aromatice">Aromatice</label>                       
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="grupuriparfum"
+                          value="florale"
+                          id="florale"
+                        /><label for="florale">Florale</label>                   
+                      </div>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name="grupuriparfum"
+                          value="lemnoase"
+                          id="lemnoase"
+                        /><label for="lemnoase">Lemnoase</label>                       
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="collapsible">Tip produs</button>
+                  <div class="content">
+                 
+                  <div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="TipProdus"
+                        value="apacolonie"
+                        id="apacolonie"
+                      /><label for="apacolonie">Apa de colonie</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="TipProdus"
+                        value="apaparfum"
+                        id="apaparfum"
+                      /><label for="apaparfum">Apa de parfum</label>
+                    </div>
+                    <div>
+                      <input
+                        type="checkbox"
+                        name="TipProdus"
+                        value="apatoaleta"
+                        id="apatoaleta"
+                      /><label for="apatoaleta">Apa de toaleta</label>
+                    </div>
+                  </div>
+                  </div>
+                </aside>
+              </div>
+              </div>
+          <div class="right-part">
+              <div class="search-box">
+                <div class="search-container">
+                    <input
+                      type="search"
+                      placeholder="Cauta parfum, produse cosmetice brand"
+                      name="search"
+                      id="search-input"
+                      value=""
+                    />
+                    <button type="button" class="search-btn" id="search">
+                      Cauta
+                    </button>
+                </div>
+              </div>
+              
+           <div class="sort-part">
+            <div class="left-pull">
+              <span>Ordoneaza dupa:</span>
+            <select name="Sort" id="sort" class="sorting">
+              <option value="Default">Default</option>
+              <option value="asc">A - Z</option>
+              <option value="desc">Z - A</option>
+					    <option value="LowToHigh">Low to high</option>
+					    <option value="HighToLow">High to low</option>
+            </select>
+            </div>
+
+            <div class="right-pull">
+              <span>Produse:</span>
+            <select>
+              <option value="24">24 pe pagina</option>
+              <option value="36">36 pe pagina</option>
+              <option value="48">48 pe pagina</option>
+              <option value="60">60 pe pagina</option>
+              <option value="72">72 pe pagina</option>
+            </select>
+            </div>
+
+           </div>
+           <!-- skdjkjflkjdlkjfdlkjfdlkjfd -->
+         
+           
+             
+              <!-- INCEPUT LKDJALKSJDLSAKDJSALKIDJSAD -->
+              <div class="app-container">
+               <div class="app-bg">
+                    <div class="left-side"></div>
+                    <div class="right-side"></div>
+                </div> 
+                
+      
+            </div>
+            <div class="products-list">
+                <div class="products" id="div-list">
+                    <!-- render porducts here -->
+                    
+                </div>
+                <div class="cart">
+                    <div class="cart-header">
+                        <div class="column1">Item</div>
+                        <div class="column2">Unit price</div>
+                        <div class="column3">Units</div>
+                    </div>
+                    <div class="cart-items">
+                        render cart items here
+                    </div>
+                    <div class="cart-footer">
+                        <div class="subtotal">
+                            Subtotal (0 items): $0
+                        </div>
+                        <div class="checkout">
+                            Proceed to checkout
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-pagination">
+              <div class="right-pull-bottom">
+                <span>Produse:</span>
+              <select>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+                <option value="60">60</option>
+                <option value="72">72</option>
+              </select>
+              </div>
+              <div class="buttons">
+                <button id="prev_button">Previous</button>
+                <button id="next_button">Next</button>
+              </div>
+              <div class="pagination pagenumbers" id="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a class="active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+              </div>
+
+            
+            </div>
+           
+          </div>
+        </div>
+       
+      </section>
+      <div class="footer-div">
+        <img src="/features/f1.png" alt="">
+        <img src="/features/f2.png" alt="">
+        <img src="/features/f3.png" alt="">
+        <img src="/features/f4.png" alt="">
+        <img src="/features/f5.png" alt="">
+        <img src="/features/f6.png" alt="">
+     </div>
+      <footer class="footer-cls">
+        <ul>
+          <li class="special-footer">The Footer</li>
+          <li><a href="#"></a>&copy 2022 The Notingo, Inc.</li>
+        </ul>
+        <ul>
+          <li class="special-footer">About</li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+        <ul>
+          <li class="special-footer">Help</li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul>
+          <li class="special-footer">Connect</li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+  <script src="/Items-List/index.js"></script>
+  <script src="/Items-List/products.js"></script>
+  <script src="/Items-List/app.js"></script>
+  <script src="/Items-List/pagination.js"></script>
+
+</html>

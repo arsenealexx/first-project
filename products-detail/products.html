@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/products-detail/CSS/products.css"
+    />
+    <title>Propoduct page </title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-navigation">
+        <div class="logo-nav">
+          <a href="/homepage/index.html" id="logo" >NOTINGO <span>LOGO</span> </a>
+         </div>
+         <div class="navbar-1">
+          <div class="nav-bar-2">
+            <a href="/Sign-UP/signup.html">Register</a>
+            <a href="/Sign-IN/signin.html">Login</a>
+          </div>
+          <div class="shopping-bag">
+            <a href="/Cart/addtocart.html">
+                <img src="/icons/bag-plus - Copy.png" alt="cart">
+                Cos de cumparaturi
+                <div class="total-items-in-cart">0</div></a>
+        </div>
+        <a>
+          <img src="/image/user-icon.png" class="user-icon" alt="">
+          <div class="user-icon-popup hide">
+            <p class="account-info">Login to your account</p>
+            <button class="bt" id="user-btn">Log out</button>
+          </div>
+          </a>
+         </div>
+       </div>
+       <div class="nav-bar">
+        <div class="dropdown">
+         <button class="dropbtn">Parfumuri 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="/Items-List/index.html">Parfumuri pentru barbati</a>
+           <a href="/Items-List/index.html">Parfumuri pentru femei</a>
+           <a href="/Items-List/index.html">Parfumuri pentru casa</a>
+           <a href="/Items-List/index.html">Toate produsele</a>
+         </div>
+       </div> 
+       
+       <div class="dropdown">
+         <button class="dropbtn">Machiaj 
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="/Items-List/index.html">Ten</a>
+           <a href="/Items-List/index.html">Ochi</a>
+           <a href="/Items-List/index.html">Sprancene</a>
+           <a href="/Items-List/index.html">Buze</a>
+         </div>
+       </div>
+    
+       <div class="dropdown">
+        <button class="dropbtn">Igiena dentara 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/Items-List/index.html">Pasta de dinti</a>
+          <a href="/Items-List/index.html">Perii de dinti</a>
+          <a href="/Items-List/index.html">Apa de gura si spray</a>
+          <a href="/Items-List/index.html">Pentru copii</a>
+        </div>
+      </div>
+    
+         <a href="/Items-List/index.html">Altele</a>
+         <a href="/Items-List/index.html">Branduri</a>
+         <a href="/Items-List/index.html">Parfumuri pentru casa</a>
+       </div>
+       
+    </header>
+    <section class="all-section">
+      <section>
+        <div class="search-box">
+          <div class="search-container">
+            <form action="/Proiect final Wansome/Items-List/index.html">
+              <input
+                type="search"
+                placeholder="Cauta parfum, produse cosmetice brand"
+                name="search"
+                id="search-input"
+              />
+              <button type="submit" class="search-btn" id="search" >Cauta</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="selector-div">
+            <a href="/index.html" class="home">Home</a>
+            <a href="/Items-List/index.html" class="home">Parfumuri pentru barbati</a>
+            <a href="#">Valentino</a>
+          </ul>
+        </div>
+      
+          <div class ="card-wrapper">
+            <h1 class="title-poduct">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</h1>
+              <div class = "card">
+                <!-- card left -->
+                <div class = "product-imgs">
+                  <div class = "img-display">
+                    <div class = "img-showcase">
+                      <img src = "/image/Valentino.jpg" alt = "parfum image">
+                      <img src = "/image/Valentino-6.jpg" alt = "parfum image">
+                      <img src = "/image/Valentino-4.jpg" alt = "parfum image">
+                      <img src = "/image/Valentino-5.jpg" alt = "parfum image">
+                    </div>
+                  </div>
+                  <div class = "img-select">
+                    <div class = "img-item">
+                      <a href = "#" data-id = "1">
+                        <img src = "/image/Valentino.jpg" alt = "parfum image">
+                      </a>
+                    </div>
+                    <div class = "img-item">
+                      <a href = "#" data-id = "2">
+                        <img src = "/image/Valentino-6.jpg" alt = "parfum image">
+                      </a>
+                    </div>
+                    <div class = "img-item">
+                      <a href = "#" data-id = "3">
+                        <img src = "/image/Valentino-4.jpg" alt = "parfum image">
+                      </a>
+                    </div>
+                    <div class = "img-item">
+                      <a href = "#" data-id = "4">
+                        <img src = "/image/Valentino-5.jpg" alt = "parfum image">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-details">
+  
+                    <div class="price-button">
+                      <div class = "purchase-info">
+                        <!-- <img src="/Proiect final Wansome/image/labelprice-1.png" class="label-price" alt=""> -->
+                          <input type = "number" min = "0" value = "1">
+                          <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                          <button type="button" class="btn-fav" onclick="addToCart()">Adauga la Favorite</button>
+                        </div>
+                      <div class = "product-prices">
+                          <p class = "last-price">Pret vechi: <span>400 LEI</span></p>
+                          <p class = "new-price">Pret nou: <span>360 LEI (10%)</span></p>
+                        </div>
+  
+                    </div>
+                  
+                    <div class = "product-detail">
+                      <h2>Descriere Valentino Born In Roma Uomo</h2>
+                      <p>Arătați lumii întregi imaginea unui bărbat modern. Apa de toaletă pentru bărbați Valentino Born In Roma Uomo este inspirată de eleganța masculină, așa cum este definită la Roma. Cu aceasta, exprimați în limbajul parfumurilor mândria fată de propriile rădăcini și transformați fiecare zi într-o celebrare a personalității și a valorilor dvs.</p>
+                      <p><strong>Compoziția parfumului</strong></p>
+                      <p>Mai întâi, fascinează combinația de vetiver profund, dulce și fumuriu, cu notele proaspete de citrice, de ghimbir picant și de violetă îmbătătoare. La scurt timp, încep să se dezvolte tonurile ierboase și plăcute ale salviei, cu un accent de sare. Întreaga compoziție este adusă la perfecțiune de baza lemnoasă, care vă ține companie până la final.</p>
+                      <p><strong>Povestea parfumului</strong></p>
+                      <p>Parfumul Valentino Born In Roma Uomo a fost creat la Roma, fiind expresia perfectă a eleganței clasice.</p>
+                    </div>
+                   
+                </div>
+                
+                
+      </section>
+      
+      <section class="sectio-2">  
+          <h2 class="center">Cele mai vândute</h2>
+          <section class="section-4">    
+
+            
+
+           <div class="slider-second products-list" id="slider-second">
+             <div class="slide-second products" id="slide-second">
+              
+ 
+             </div>
+             <button class="ctrl-btn-second pro-prev-second">Prev</button>
+             <button class="ctrl-btn-second pro-next-second">Next</button>
+           </div>
+           <div class="products-list ">
+            <div class="products">
+                <!-- render porducts here -->
+            </div>
+            <div class="cart">
+                <div class="cart-header">
+                    <div class="column1">Item</div>
+                    <div class="column2">Unit price</div>
+                    <div class="column3">Units</div>
+                </div>
+                <div class="cart-items">
+                    <!-- render cart items here -->
+                </div>
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        Subtotal (0 items): $0
+                    </div>
+                    <div class="checkout">
+                        Proceed to checkout
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+      </section>
+       <!-- <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Valentino-1.jpg"  alt="parfum">
+                 <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                 <button type="button" class="btn">Adauga in cos</button>
+                </div>
+                <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Valentino-1.jpg" alt="parfum">
+                 <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                 <button type="button" class="btn">Adauga in cos</button>
+                </div>
+             
+                <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Versace-3.jpg" alt="parfum">
+                     <p class="product-title">Apa de toaleta Versace Eros Flame, Barbati, 100ml</p>
+                  <button type="button" class="btn">Adauga in cos</button>
+               </div>
+             
+                <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/invictus-2.jpg" alt="parfum">
+                 <p class="product-title">Apa de toaleta Paco Rabanne, Invictus Legend, Barbati, 100 ml</p>
+                 <button type="button" class="btn">Adauga in cos</button>
+               </div>
+             
+               <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Versace-2.jpg" alt="parfum">
+                     <p class="product-title">Apa de toaleta Versace Eros, Barbati, 100ml</p>
+                  <button type="button" class="btn">Adauga in cos</button>
+               </div>
+               <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Valentino-1.jpg"  alt="parfum">
+                 <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                 <button type="button" class="btn">Adauga in cos</button>
+                </div>
+                <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Valentino-1.jpg" alt="parfum">
+                 <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                 <button type="button" class="btn">Adauga in cos</button>
+                </div>
+             
+                <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Versace-3.jpg" alt="parfum">
+                     <p class="product-title">Apa de toaleta Versace Eros Flame, Barbati, 100ml</p>
+                  <button type="button" class="btn">Adauga in cos</button>
+               </div>
+             
+                <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/invictus-2.jpg" alt="parfum">
+                 <p class="product-title">Apa de toaleta Paco Rabanne, Invictus Legend, Barbati, 100 ml</p>
+                 <button type="button" class="btn">Adauga in cos</button>
+               </div>
+             
+               <div class="prod-2">
+                 <img src="/Proiect final Wansome/image/Versace-2.jpg" alt="parfum">
+                     <p class="product-title">Apa de toaleta Versace Eros, Barbati, 100ml</p>
+                  <button type="button" class="btn">Adauga in cos</button>
+               </div> -->
+      <div class="footer-div">
+        <img src="/features/f1.png" alt="">
+        <img src="/features/f2.png" alt="">
+        <img src="/features/f3.png" alt="">
+        <img src="/features/f4.png" alt="">
+        <img src="/features/f5.png" alt="">
+        <img src="/features/f6.png" alt="">
+     </div>
+       <footer class="footer-cls">
+         <ul>
+           <li class="special-footer">The Footer</li>
+           <li><a href="#"></a>&copy 2022 The Notingo, Inc.</li>
+         </ul>
+         <ul>
+           <li class="special-footer">About</li>
+           <li><a href="#">Team</a></li>
+           <li><a href="#">Jobs</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Press</a></li>
+         </ul>
+         <ul>
+           <li class="special-footer">Help</li>
+           <li><a href="#">FAQ</a></li>
+           <li><a href="#">Security</a></li>
+           <li><a href="#">Terms of Service</a></li>
+           <li><a href="#">Privacy Policy</a></li>
+         </ul>
+         <ul>
+           <li class="special-footer">Connect</li>
+           <li><a href="#">Facebook</a></li>
+           <li><a href="#">YouTube</a></li>
+           <li><a href="#">Twitter</a></li>
+           <li><a href="#">Instagram</a></li>
+         </ul>
+       </footer>
+    </section>
+   
+    <script src="/products-detail/products.js"></script>
+    <script src="/products-detail/slidercart.js"></script>
+  </body>
+</html>

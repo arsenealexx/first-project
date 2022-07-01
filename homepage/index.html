@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/homepage/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>NOTINGO</title>
+</head>
+<body>
+ <header>
+   <div class="logo-navigation"></div>
+ 
+   <div class="nav-bar">
+    <div class="dropdown">
+     <button class="dropbtn">Parfumuri 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="/Items-List/index.html">Parfumuri pentru barbati</a>
+       <a href="/Items-List/index.html">Parfumuri pentru femei</a>
+       <a href="/Items-List/index.html">Parfumuri pentru casa</a>
+       <a href="/Items-List/index.html">Toate produsele</a>
+     </div>
+   </div> 
+   
+   <div class="dropdown">
+     <button class="dropbtn">Machiaj 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="/Items-List/index.html">Ten</a>
+       <a href="/Items-List/index.html">Ochi</a>
+       <a href="/Items-List/index.html">Sprancene</a>
+       <a href="/Items-List/index.html">Buze</a>
+     </div>
+   </div>
+
+   <div class="dropdown">
+    <button class="dropbtn">Igiena dentara 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/Items-List/index.html">Pasta de dinti</a>
+      <a href="/Items-List/index.html">Perii de dinti</a>
+      <a href="/Items-List/index.html">Apa de gura si spray</a>
+      <a href="/Items-List/index.html">Pentru copii</a>
+    </div>
+  </div>
+
+     <a href="/Items-List/index.html">Altele</a>
+     <a href="/Items-List/index.html">Branduri</a>
+     <a href="/Items-List/index.html">Parfumuri pentru casa</a>
+   </div>
+ </header>
+ <section class="all-section">
+  <section>
+    <div class="hero-1">
+     <div class="search-container">
+       <form action="">
+         <input type="text" placeholder="Cauta parfum, produse cosmetice brand" id="search_by" name="search">
+         <button type="submit" class="search-btn" id="search_button">Cauta</button>
+       </form>
+     </div>
+    </div>
+  </section>
+  <section class="section-2" >
+    <h2 class="center">Ai vizionat recent</h2>
+   
+    <div class="slider products-list" id="slider">
+      <div class="slide products" id="slide">
+       
+
+      </div>
+      <button class="ctrl-btn pro-prev">Prev</button>
+      <button class="ctrl-btn pro-next">Next</button>
+    </div>
+      
+      <div class="cart">
+          <div class="cart-header">
+              <div class="column1">Item</div>
+              <div class="column2">Unit price</div>
+              <div class="column3">Units</div>
+          </div>
+          <div class="cart-items">
+              render cart items here
+          </div>
+          <div class="cart-footer">
+              <div class="subtotal">
+                  Subtotal (0 items): $0
+              </div>
+              <div class="checkout">
+                  Proceed to checkout
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </section>
+ 
+  <section class="section-3">
+    <div class="hero-2">
+     <img src="/image/Hero-3.jpg" alt="">
+    </div>
+   
+  </section>
+  <h2 class="center">Cele mai vândute</h2>
+  <section class="section-4">
+ 
+   <div class="slider-second" id="slider-second">
+     <div class="slide-second" id="slide-second">
+       <div class="prod-2">
+                 <img src="/image/Valentino-1.jpg"  alt="parfum">
+               <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                  <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                 </div>
+                 <div class="prod-2">
+                  <img src="/image/Valentino-1.jpg" alt="parfum">
+                  <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                  <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                 </div>
+             
+                 <div class="prod-2">
+                <img src="/image/Versace-3.jpg" alt="parfum">
+                     <p class="product-title">Apa de toaleta Versace Eros Flame, Barbati, 100ml</p>
+                   <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                </div>
+             
+                 <div class="prod-2">
+                  <img src="/image/invictus-2.jpg" alt="parfum">
+                <p class="product-title">Apa de toaleta Paco Rabanne, Invictus Legend, Barbati, 100 ml</p>
+                 <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+              </div>
+             
+                <div class="prod-2">
+                  <img src="/image/Versace-2.jpg" alt="parfum">
+                     <p class="product-title">Apa de toaleta Versace Eros, Barbati, 100ml</p>
+                   <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                </div>
+                <div class="prod-2">
+                <img src="/image/Valentino-1.jpg"  alt="parfum">
+                  <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                  <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                 </div>
+                 <div class="prod-2">
+                  <img src="/image/Valentino-1.jpg" alt="parfum">
+                  <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo, Barbati, 100ml</p>
+                  <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                 </div>
+             
+                 <div class="prod-2">
+                  <img src="/image/Versace-3.jpg" alt="parfum">
+                      <p class="product-title">Apa de toaleta Versace Eros Flame, Barbati, 100ml</p>
+                   <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                </div>
+             
+                <div class="prod-2">
+                  <img src="/image/invictus-2.jpg" alt="parfum">
+                  <p class="product-title">Apa de toaleta Paco Rabanne, Invictus Legend, Barbati, 100 ml</p>
+                  <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                </div>
+             
+                <div class="prod-2">
+                  <img src="/image/Versace-2.jpg" alt="parfum">
+                      <p class="product-title">Apa de toaleta Versace Eros, Barbati, 100ml</p>
+                   <button type="button" class="btn" onclick="addToCart()">Adauga in cos</button>
+                </div>
+     </div>
+     <button class="ctrl-btn-second pro-prev-second">Prev</button>
+     <button class="ctrl-btn-second pro-next-second">Next</button>
+   </div> 
+ 
+  
+   
+  </section>
+
+  <h2 class="center">Această săptămână la reducere</h2>
+  <section class="section-5">
+   <div class="prod-3">
+     <img src="/image/invictus-2.jpg" alt="parfum">
+     <p class="product-title">Apa de toaleta Paco Rabanne, Invictus Legend</p>
+   </div>
+ 
+   <div class="prod-3">
+     <img src="/image/Valentino-1.jpg" alt="parfum">
+     <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo</p>
+    </div>
+    
+   <div class="prod-3">
+     <img src="/image/Versace-2.jpg" alt="parfum">
+         <p class="product-title">Apa de toaleta Versace Eros</p>
+   </div>
+ 
+   <div class="prod-3">
+     <img src="/image/Versace-3.jpg" alt="parfum">
+         <p class="product-title">Apa de toaleta Versace Eros Flame</p>
+   </div>
+ 
+   <div class="prod-3">
+     <img src="/image/Valentino-1.jpg" alt="parfum">
+     <p class="product-title">Apa de toaleta Valentino Born In Roma Uomo</p>
+    </div>
+ 
+    <div class="prod-3">
+     <img src="/image/Versace-3.jpg" alt="parfum">
+         <p class="product-title">Apa de toaleta Versace Eros Flame, Barbati</p>
+   </div>
+ 
+    <div class="prod-3">
+     <img src="/image/invictus-2.jpg" alt="parfum">
+     <p class="product-title">Apa de toaleta Paco Rabanne, Invictus Legend, Barbati</p>
+   </div>
+ 
+   <div class="prod-3">
+     <img src="/image/Versace-2.jpg" alt="parfum">
+         <p class="product-title">Apa de toaleta Versace Eros</p>
+   </div>
+ 
+ 
+ </section>
+ <div class="footer-div">
+    <img src="/features/f1.png" alt="">
+    <img src="/features/f2.png" alt="">
+    <img src="/features/f3.png" alt="">
+    <img src="/features/f4.png" alt="">
+    <img src="/features/f5.png" alt="">
+    <img src="/features/f6.png" alt="">
+ </div>
+ <footer class="footer-cls">
+  <ul>
+    <li class="special-footer">The Footer</li>
+    <li><a href="#"></a>&copy 2022 The Notingo, Inc.</li>
+  </ul>
+  <ul>
+    <li class="special-footer">About</li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Jobs</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Press</a></li>
+  </ul>
+  <ul>
+    <li class="special-footer">Help</li>
+    <li><a href="#">FAQ</a></li>
+    <li><a href="#">Security</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+  </ul>
+  <ul>
+    <li class="special-footer">Connect</li>
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">YouTube</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Instagram</a></li>
+  </ul>
+</footer>
+ </section>
+ 
+
+  <script src="/homepage/index.js"></script>
+  <script src="/homepage/navbar.js"></script>
+  <script src="/homepage/otherindex.js"></script>
+  <script src="/homepage/products.js"></script>
+  <script src="/homepage/carousel.js"></script>
+
+</body>
+</html>
